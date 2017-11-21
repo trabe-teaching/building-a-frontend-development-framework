@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Building a frontend development framework</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="trabe-slide-pack.css">
+  </head>
+  <body>
+
+<textarea data-slide-pack>
+-- trabe
+
+# Building a frontend development framework
+<br/>
+
+-- trabe
+
+# Building a frontend development framework
+(by combining third party frameworks and libraries)
+
+-- trabe
+
+# Building a frontend development framework
+(an ES2015/React/Redux based framework)
+
+-- trabe who
+
+<div class="trabe-people">
+<h1>David Barral</h1>
+<small>david@trabe.io</small>
+<br/>
+<small>@davidbarral</small>
+
+<br/>
+<br/>
+<br/>
+
+<h1>Asís García</h1>
+<small>asis@trabe.io</small>
+<br/>
+<small>@asischao</small>
+</div>
+
+<div class="trabe-info">
+  ![](assets/trabe-logo.png)
+  <br/>
+  <small>https://trabe.io</small>
+  <br/>
+  <small>@trabe</small>
+</div>
+
+--
+
+# Origin
+
+## There was a framework...
+
+* Archetype, not framework
+* Developer dissatisfaction
+* Versioning hell
+* Technical debt
+* Maintenance hell
+
+## Low adoption rate
+
+--
+
+# Solution
+
+## Develop a new framework
+
+* A real framework
+* DX (developer experience)
+* Semantic versioning + migration path
+* Modern technologies
+* A series of refined design principles and smart decision making xD
+
+--
+
+# Real world problem driven design
+
+* Build a solution for a real world problem
+* User-needs driven development
+* Extract framework from the solution
+* Avoid synthetic APIs
+* Caution: it might end being a not ideal solution
+
+--
+
+# Functionality bloat
+
+* Support 100% use cases badly instead of solving 80% the right way
+* Danger of building specific solutions into the framework
+* It's a "frame"-work!
+
+--
+
+# Focused effort
+
+Offer the viable minimum
+
+* Minimize functionalities
+* Minimize API surface
+* Minimize code (less code means less manteinance)
+
+--
+
+# Design
+
+* Small pieces
+* Provide basic components
+* Favor composition
+* Also provide complex components that use the basic ones
+* SRP
+
+-- two-columns
+
+# DX
+
+## Be programmer friendly
+
+* Guards
+* Self explanatory errors
+* Custom tooling
+* Offline docs
+* Runnable/Interactive examples
+* Scaffolding (teach by example)
+* Explicitness
+* Convention over configuration
+* Sane defaults
+* Extension points
+* Source code as documentation
+
+--
+
+# First steps
+
+* Look for base technologies
+* Analize and build working prototypes
+
+--
+
+# Evolution
+
+* Strict Semantic Versioning
+* Changelog and migration instructions
+* Prioritize bugfixing
+* Refactor early. Refactor often
+* Try new technology in sandboxed parts. Experience pros and cons. Adopt if gives advantages
+
+--
+
+# Deprecation
+
+## Have strict/predictable deprecation policies
+
+## Deprecate early
+
+* Unused stuff (don't fall for "but it's already done!")
+* Language supported stuff
+* Third party better supported stuff
+
+--
+
+# Dependencies
+
+* Proven solutions only, only if "really" needed
+* Do not force unnecessary third party deps
+* Contain both amount and size
+* Wrap but do not rewrite
+* Beware of the update hell. Adapt when needed
+* Bugs and pull requests
+* Beware: integrating tools not meant to work together
+
+--
+
+# Code standards
+
+* Standardize a code convention
+* Enforce with a linter
+* Use a code formatter
+
+--
+
+# Transpilation
+
+* Use the best tools
+* Use modern versions
+* Prevent future technical debt
+
+--
+
+# Testing
+
+* Integration vs Unit
+* Snapshot testing
+
+--
+
+# Environments
+
+* Support development, staging, production, testing ...
+* Support different OSs
+
+--
+
+# Source control
+
+* Monorepo vs multirepo
+* Rebase vs merge
+* Bisect, history traversing
+
+--
+
+# CI
+
+* Codebase health check
+* Automatic release when version changes
+* Automatic repo tagging
+
+--
+
+# Teamwork
+
+* Communication
+* "Getting started" documentation
+* Pull requests & (team) code reviews
+* Tooling: github, bitbucket, gitlab...
+
+-- trabe-black
+
+# That's all folks!
+
+## Questions?
+
+</textarea>
+    <!-- SlidePack markdown compilation & UI goodies -->
+    <script src="slide-pack.js"></script>
+  </body>
+</html>
