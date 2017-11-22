@@ -725,8 +725,8 @@ section {
 
 html { font-size: 20pt;  line-height: 2rem;    }
 h1 { font-size: 2rem; line-height: 2.88rem; }
-h2 { font-size: 1.6rem; line-height: 2.88rem; }
-h3 { font-size: 1.2rem;  line-height: 2.4rem;  }
+h2 { font-size: 1.6rem; line-height: 2.6rem; }
+h3 { font-size: 1.2rem;  line-height: 2.2rem;  }
 
 h1 {
   font-family: "ASM-UDRegular", sans-serif;

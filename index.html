@@ -6,6 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="trabe-slide-pack.css">
   </head>
+  <style type="text/css">
+    ul {
+      background-color: #f5f5f5;
+      padding: 1rem;
+      text-align: left;
+      font-color: 444;
+    }
+    .two-columns ul {
+      padding: 1rem !important;
+    }
+
+    .two-columns ul li {
+      font-size: 1rem !important;
+      line-height: 1.3rem !important;
+    }
+  </style>
   <body>
 
 <textarea data-slide-pack>
@@ -62,7 +78,7 @@
 * Technical debt
 * Maintenance hell
 
-## Low adoption rate
+### .. with low adoption rate
 
 --
 
@@ -78,9 +94,10 @@
 
 --
 
-# Real world problem driven design
+# Problem driven design
 
-* Build a solution for a real world problem
+## Build a solution for a<br/> real world problem
+
 * User-needs driven development
 * Extract framework from the solution
 * Avoid synthetic APIs
@@ -90,15 +107,16 @@
 
 # Functionality bloat
 
+## It's a "frame"-work!
+
 * Support 100% use cases badly instead of solving 80% the right way
 * Danger of building specific solutions into the framework
-* It's a "frame"-work!
 
 --
 
 # Focused effort
 
-Offer the viable minimum
+## Offer the viable minimum
 
 * Minimize functionalities
 * Minimize API surface
@@ -108,9 +126,10 @@ Offer the viable minimum
 
 # Design
 
+## Favor composition
+
 * Small pieces
 * Provide basic components
-* Favor composition
 * Also provide complex components that use the basic ones
 * SRP
 
@@ -136,6 +155,8 @@ Offer the viable minimum
 
 # First steps
 
+## No need to reinvent the wheel
+
 * Look for base technologies
 * Analize and build working prototypes
 
@@ -143,9 +164,19 @@ Offer the viable minimum
 
 # Evolution
 
+## Predictable releases
+
 * Strict Semantic Versioning
 * Changelog and migration instructions
 * Prioritize bugfixing
+
+--
+
+# Evolution
+
+## Avoid technical debt
+
+* Update deps often. Handle the breaking changes.
 * Refactor early. Refactor often
 * Try new technology in sandboxed parts. Experience pros and cons. Adopt if gives advantages
 
@@ -153,29 +184,31 @@ Offer the viable minimum
 
 # Deprecation
 
-## Have strict/predictable deprecation policies
+## Have strict/predictable policies
 
-## Deprecate early
+* Deprecate early:
+    * Unused stuff
+    * Language supported stuff
+    * Third party better supported stuff
 
-* Unused stuff (don't fall for "but it's already done!")
-* Language supported stuff
-* Third party better supported stuff
+###  don't fall for "it's already done!"
 
 --
 
 # Dependencies
 
-* Proven solutions only, only if "really" needed
-* Do not force unnecessary third party deps
-* Contain both amount and size
-* Wrap but do not rewrite
-* Beware of the update hell. Adapt when needed
+## Proven solutions only, only if "really" needed
+
+* Do not force unnecessary third party deps. Contain both amount and size
 * Bugs and pull requests
+* Beware of the update hell. Wrap but do not rewrite. Adapt when needed
 * Beware: integrating tools not meant to work together
 
 --
 
 # Code standards
+
+## Remove personal aesthetics from the equation
 
 * Standardize a code convention
 * Enforce with a linter
@@ -185,6 +218,8 @@ Offer the viable minimum
 
 # Transpilation
 
+## Write future proof code
+
 * Use the best tools
 * Use modern versions
 * Prevent future technical debt
@@ -193,27 +228,38 @@ Offer the viable minimum
 
 # Testing
 
+## No tests, no confidence
+## No test no refactoring
+
 * Integration vs Unit
 * Snapshot testing
+* Regression testing
 
 --
 
 # Environments
 
-* Support development, staging, production, testing ...
-* Support different OSs
+## Build everywhere, run everywhere
+
+* Support different major OSs
+* Support development, staging, production, testing...
 
 --
 
 # Source control
 
+## Use a strict policy
+
 * Monorepo vs multirepo
 * Rebase vs merge
 * Bisect, history traversing
+* Commit messages
 
 --
 
 # CI
+
+## Avoid mistakes and chores
 
 * Codebase health check
 * Automatic release when version changes
@@ -222,6 +268,8 @@ Offer the viable minimum
 --
 
 # Teamwork
+
+## Keep everybody in the loop
 
 * Communication
 * "Getting started" documentation
