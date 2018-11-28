@@ -40,6 +40,7 @@
 # Building a frontend development framework
 (an ES2015/React/Redux based framework)
 
+
 -- trabe who
 
 <div class="trabe-people">
@@ -70,7 +71,7 @@
 
 # Origin
 
-## There was a framework...
+## There was a frontend framework...
 
 * Archetype, not framework
 * Developer dissatisfaction
@@ -78,7 +79,7 @@
 * Technical debt
 * Maintenance hell
 
-### .. with low adoption rate
+### ... with low adoption rate
 
 --
 
@@ -91,6 +92,7 @@
 * Semantic versioning + migration path
 * Modern technologies
 * A series of refined design principles and smart decision making xD
+
 
 --
 
@@ -105,6 +107,17 @@
 
 --
 
+# Problem driven design
+
+## Build a solution for a<br/> real world problem
+
+* User-needs driven development ❌
+* Extract framework from the solution ❌
+* Avoid synthetic APIs ❌
+* Caution: it might end being a not ideal solution ❌
+
+--
+
 # Functionality bloat
 
 ## It's a "frame"-work!
@@ -114,13 +127,32 @@
 
 --
 
+# Functionality bloat
+
+## It's a "frame"-work!
+
+* Support 100% use cases badly instead of solving 80% the right way
+* Danger of building specific solutions into the framework ❌
+
+--
+
 # Focused effort
 
 ## Offer the viable minimum
 
 * Minimize functionalities
 * Minimize API surface
-* Minimize code (less code means less manteinance)
+* Minimize code (less code means less maintenance)
+
+--
+
+# Focused effort
+
+## Offer the viable minimum
+
+* Minimize functionalities ❌
+* Minimize API surface ❌
+* Minimize code (less code means less maintenance) ❌
 
 --
 
@@ -132,6 +164,20 @@
 * Provide basic components
 * Also provide complex components that use the basic ones
 * SRP
+* Separate logic from UI
+
+--
+
+# Design
+
+## Favor composition
+
+* Small pieces
+* Provide basic components
+* Also provide complex components that use the basic ones
+* SRP
+* Separate logic from UI ❌
+
 
 -- two-columns
 
@@ -150,6 +196,25 @@
 * Sane defaults
 * Extension points
 * Source code as documentation
+
+-- two-columns
+
+# DX
+
+## Be programmer friendly
+
+* Guards
+* Self explanatory errors
+* Custom tooling
+* Offline docs
+* Runnable/Interactive examples
+* Scaffolding (teach by example) ❌
+* Explicitness ❌
+* Convention over configuration
+* Sane defaults
+* Extension points ❌
+* Source code as documentation
+
 
 --
 
@@ -174,9 +239,39 @@
 
 # Evolution
 
+## Predictable releases
+
+* Strict Semantic Versioning ❌
+* Changelog and migration instructions
+* Prioritize bugfixing
+
+--
+
+# Evolution
+
+## Predictable releases
+
+* Strict Semantic Versioning ✅
+* Changelog and migration instructions
+* Prioritize bugfixing
+
+--
+
+# Evolution
+
 ## Avoid technical debt
 
 * Update deps often. Handle the breaking changes
+* Refactor early. Refactor often
+* Try new technology in sandboxed parts. Experience pros and cons. Adopt if it gives advantages
+
+--
+
+# Evolution
+
+## Avoid technical debt
+
+* Update deps often. Handle the breaking changes ❌
 * Refactor early. Refactor often
 * Try new technology in sandboxed parts. Experience pros and cons. Adopt if it gives advantages
 
@@ -200,6 +295,17 @@
 ## Proven solutions only, only if "really" needed
 
 * Do not force unnecessary third party deps. Contain both amount and size
+* Bugs and pull requests
+* Beware of the update hell. Wrap but do not rewrite. Adapt when needed
+* Beware: integrating tools not meant to work together
+
+--
+
+# Dependencies
+
+## Proven solutions only, only if "really" needed
+
+* Do not force unnecessary third party deps. Contain both amount and size ❌
 * Bugs and pull requests
 * Beware of the update hell. Wrap but do not rewrite. Adapt when needed
 * Beware: integrating tools not meant to work together
@@ -276,6 +382,86 @@
 * Automate PR "sanity checks"
 * Pull requests &amp; (team) code reviews
 * Tooling: github, bitbucket, gitlab, danger...
+
+--
+
+# Teamwork
+
+## Keep everybody in the loop
+
+* Communication
+* "Getting started" documentation
+* Automate PR "sanity checks" ❌
+* Pull requests &amp; (team) code reviews
+* Tooling: github, bitbucket, gitlab, danger...
+
+-- trabe-black
+
+# Chapter 2
+
+-- trabe
+
+# Building a microservices development framework
+<br/>
+
+-- trabe
+
+# Building a microservices development framework
+(by combining third party frameworks and libraries)
+
+-- trabe
+
+# Building a microservices development framework
+(a Node/Koa based framework)
+
+--
+
+# Origin
+
+## There was a microservices framework...
+
+* Java/Spring boot based
+* A series of technologies glued together
+
+### ... but no Node.js alternative
+
+--
+
+# Solution
+
+Develop a new framework
+
+* Node/Koa based
+* Port funcionalities/ideas
+* Adapt to JS/Node
+* Modern technologies
+* A series of refined design principles and smart decision making xD
+
+--
+
+# Same principles applied!
+
+--
+
+# Learn from the past
+
+* Strict semantic versioning
+* Deprecate all the things
+* Monorepo + multipackage
+* Tight control of docs
+* Alphas + feedback
+* Clear Roadmap
+
+--
+
+# Learn from the past
+
+* Strict semantic versioning
+* Deprecate all the things
+* Monorepo + multipackage
+* Tight control of docs
+* Alphas + feedback
+* Clear Roadmap ❌
 
 -- trabe-black
 
